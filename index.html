@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Tyagi - Tech Lead - Resume</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #2563eb;
+            --accent-bg: #eff6ff;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --border-color: #d1d5db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+
+        .container {
+            max-width: 920px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+            border-top: 6px solid var(--primary-color);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 15px;
+            margin-bottom: 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .header-left h1 {
+            color: var(--primary-color);
+            margin: 0 0 5px 0;
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin: 0 0 2px 0;
+            text-transform: uppercase;
+        }
+
+        .company-title {
+            font-size: 16px;
+            color: var(--text-dark);
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .meta-info {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 13.5px;
+            color: var(--text-dark);
+            line-height: 1.4;
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .target-roles {
+            background-color: var(--accent-bg);
+            border-left: 4px solid var(--secondary-color);
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 3px;
+            margin-top: 22px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .section-header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .view-certs-btn {
+            font-size: 11px;
+            padding: 3px 10px;
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s;
+            font-weight: 600;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        .view-certs-btn:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .profile-summary ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .profile-summary li {
+            margin-bottom: 6px;
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        .keywords {
+            font-size: 11.5px;
+            color: var(--text-light);
+            margin-top: 8px;
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill-cat {
+            background: #fafafa;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 12px;
+            font-size: 13px;
+        }
+
+        .skill-cat strong {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--primary-color);
+            font-size: 14px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 3px;
+            text-transform: uppercase;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #ffffff;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 4px;
+            margin-bottom: 5px;
+            border: 1px solid #d1d5db;
+            color: var(--text-dark);
+        }
+
+        .tag .prof {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 11px;
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .info-table td {
+            padding: 4px 6px;
+            vertical-align: top;
+            border: 1px solid #e5e7eb;
+        }
+
+        .info-table td:nth-child(2) {
+            text-align: right;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        .project-details p {
+            margin: 0 0 8px 0;
+            font-size: 13.5px;
+            text-align: justify;
+        }
+
+        .timeline-block {
+            font-size: 13px;
+        }
+
+        .timeline-company {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 6px;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2px;
+            padding-left: 8px;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .timeline-role {
+            font-weight: 500;
+        }
+
+        .timeline-date {
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .bullet-list {
+            margin: 4px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .bullet-list li {
+            margin-bottom: 4px;
+            font-size: 13.5px;
+            text-align: justify;
+        }
+
+        .nested-list {
+            margin: 2px 0;
+            padding-left: 20px;
+            list-style-type: circle;
+        }
+
+        .nested-list li {
+            font-size: 12.5px;
+            margin-bottom: 2px;
+        }
+
+        .awards-group {
+            margin-bottom: 8px;
+        }
+
+        .awards-year-title {
+            font-weight: 700;
+            color: var(--secondary-color);
+            font-size: 13.5px;
+            margin-bottom: 3px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 1px;
+        }
+
+        .awards-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 8px 0;
+        }
+
+        .awards-list li {
+            font-size: 13px;
+            margin-bottom: 3px;
+            padding-left: 15px;
+            position: relative;
+            text-align: justify;
+        }
+
+        .awards-list li::before {
+            content: "🏆";
+            position: absolute;
+            left: 0;
+            font-size: 11px;
+        }
+
+        .education-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13.5px;
+            margin-bottom: 8px;
+        }
+
+        .education-left strong {
+            color: var(--primary-color);
+        }
+
+        .education-right {
+            text-align: right;
+            font-weight: 600;
+        }
+
+        @media print {
+            body { background-color: #fff; font-size: 12px; }
+            .container { margin: 0; padding: 0; box-shadow: none; max-width: 100%; border-top: none; }
+            .section-title { margin-top: 15px; margin-bottom: 8px; }
+            .tag { background: transparent; border: 1px solid #aaa; }
+            .skill-cat { background: transparent; }
+            .no-print { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>ASHISH TYAGI</h1>
+                <div class="subtitle">TECH LEAD</div>
+                <div class="company-title">GENPACT INDIA PVT. LTD.</div>
+                <div class="meta-info">OHR ID: 703306429 | Band: 4C | Legal Entity: 1401</div>
+            </div>
+            <div class="contact-info">
+                📍 Roorkee, Uttarakhand<br>
+                📞 +91-9545644005<br>
+                ✉️ <a href="mailto:ashishtyagi059@gmail.com">ashishtyagi059@gmail.com</a><br>
+                🔗 <a href="https://www.linkedin.com/in/ashishtyagi059" target="_blank">www.linkedin.com/in/ashishtyagi059</a>
+            </div>
+        </header>
+
+        <!-- PROFILE SUMMARY -->
+        <section class="section">
+            <div class="section-title">Profile Summary</div>
+            <div class="profile-summary">
+                <ul>
+                    <li>Result-oriented professional with <strong>10+ Years</strong> of robust experience in Mainframe Modernization and Development (COBOL, DB2, JCL, CICS, VSAM) and Modern Application Development (Java, Spring Boot, AWS, AI).</li>
+                    <li>Expertise end-to-end technical implementations within the Healthcare Payor/Provider domains and US Pension, Retirement Planning, Investment business.</li>
+                    <li>Proven track record in driving Mainframe modernization initiatives via Domain-Driven Design (DDD) blueprints, shifting legacy structures to scalable targets (GCP/AWS Cloud architecture).</li>
+                    <li>Extensive history of engineering high-throughput automated processes, including custom Micro Focus RUMBA scripts for instant code delivery and data extraction pipelines (.csv / .txt formatting).</li>
+                    <li>Hands-on experience over industry-standard continuous monitoring, observability, and deployment pipelines, including Jenkins-XLR Pipelines, Bitbucket, GitHub, Jira, Confluence, Kibana, and Dynatrace.</li>
+                    <li>Highly decorated career milestones featuring over $10 Million in production MIPS cost reductions achieved through database tuning, custom access paths, and query optimization.</li>
+                    <li>Demonstrated management experience as an engineering lead supervising developer teams and serving as project Configuration Manager for auditing version hierarchies and production release cycles.</li>
+                </ul>
+                <div class="keywords">
+                    <strong>KEYWORDS:</strong> MAINFRAME, COBOL, DB2, JCL, CICS, STORED PROCEDURES, PSAL's, CSAL's, XPED, STROBE, ENDEVOR, ALTAI, ZEKE, AAVIEWER, SPUFI, VSAM, WORKBENCH, B92, ABP's, IDz
+                </div>
+            </div>
+        </section>
+
+        <!-- ROLE PREFERENCES -->
+        <div class="target-roles">
+            🎯 <strong>Role Preferences:</strong> Digital Architect | Solution Architect | Technical Architect
+        </div>
+
+        <!-- CORE COMPETENCIES & TECHNICAL SKILLS (TILE LAYOUT) -->
+        <section class="section">
+            <div class="section-title">Core Competencies & Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-cat">
+                    <strong>MAINFRAME & ENTERPRISE SYSTEMS</strong>
+                    <span class="tag">Mainframe <span class="prof">[Proficient]</span></span>
+                    <span class="tag">COBOL</span>
+                    <span class="tag">DB2 <span class="prof">[Proficient]</span></span>
+                    <span class="tag">JCL</span>
+                    <span class="tag">CICS</span>
+                    <span class="tag">VSAM</span>
+                    <span class="tag">Stored Procedures</span>
+                    <span class="tag">ENDEVOR</span>
+                    <span class="tag">WORKBENCH</span>
+                    <span class="tag">IDz (Eclipse IDE)</span>
+                    <span class="tag">REXX</span>
+                    <span class="tag">SPUFI</span>
+                    <span class="tag">XPED / STROBE</span>
+                    <span class="tag">AS 400 <span class="prof">[Beginner]</span></span>
+                </div>
+                <div class="skill-cat">
+                    <strong>CLOUD, DIGITAL & AI STACK</strong>
+                    <span class="tag">AWS <span class="prof">[Proficient]</span></span>
+                    <span class="tag">Domain-Driven Design (DDD)</span>
+                    <span class="tag">Generative AI <span class="prof">[Proficient]</span></span>
+                    <span class="tag">Agentic AI <span class="prof">[Intermediate]</span></span>
+                    <span class="tag">Core Java <span class="prof">[Beginner]</span></span>
+                    <span class="tag">Spring Boot <span class="prof">[Intermediate]</span></span>
+                    <span class="tag">Spring MVC & Hibernate</span>
+                    <span class="tag">RESTful APIs</span>
+                    <span class="tag">JavaScript / React JS</span>
+                    <span class="tag">Oracle Database</span>
+                    <span class="tag">AWS Lambda, EC2, S3, IAM</span>
+                </div>
+                <div class="skill-cat">
+                    <strong>DEVOPS & ENGINEERING TOOLS</strong>
+                    <span class="tag">Git / GitHub / Bitbucket</span>
+                    <span class="tag">Jenkins-XLR Pipelines</span>
+                    <span class="tag">Jira / Confluence</span>
+                    <span class="tag">Kibana & Dynatrace Monitoring</span>
+                    <span class="tag">Maven / Build & Deploy</span>
+                    <span class="tag">MS Visio / Miro Whiteboards</span>
+                    <span class="tag">Scrum / Agile <span class="prof">[Proficient]</span></span>
+                </div>
+                <div class="skill-cat">
+                    <strong>DOMAINS & METHODOLOGIES</strong>
+                    <span class="tag">US Pension & Retirement</span>
+                    <span class="tag">Investments Planning</span>
+                    <span class="tag">Healthcare Core Ops</span>
+                    <span class="tag">Payor & PBM Systems</span>
+                    <span class="tag">Providers & Specialty</span>
+                    <span class="tag">MIPS Optimization Architecture</span>
+                    <span class="tag">Solution Architecture</span>
+                    <span class="tag">People Leadership</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILL DETAILS & DOMAINS MATRIX TABLES -->
+        <section class="section">
+            <div class="grid-2col">
+                <div>
+                    <div class="section-title">Skill Details</div>
+                    <table class="info-table">
+                        <tr><td>Mainframe</td><td>10 Years</td></tr>
+                        <tr><td>Java + Java Script (AI Assisted) Programming</td><td>1+ Years</td></tr>
+                        <tr><td>Creating Front end Screens (AI Assisted)</td><td>1+ Years</td></tr>
+                    </table>
+                </div>
+                <div>
+                    <div class="section-title">Domains Breakdown</div>
+                    <table class="info-table">
+                        <tr><td>Healthcare Provider Domain</td><td>8.5+ Years</td></tr>
+                        <tr><td>Pension, Retirement and Investment</td><td>14 Months</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT DETAILS & PROMOTION/ROLE CHANGES -->
+        <section class="section">
+            <div class="grid-2col">
+                <div class="project-details">
+                    <div class="section-title">Project Details</div>
+                    <p>Independently leading the high-stakes design, development, enhancement, and end-to-end maintenance of critical Mainframe components.</p>
+                    <p>Spearheading application modernization and migration pathways for core applications via a Domain-Driven Design (DDD) approach targeting GCP/AWS environments.</p>
+                </div>
+                <div class="timeline-block">
+                    <div class="section-title">Promotion / Role Changes</div>
+
+                    <div class="timeline-company">GENPACT:</div>
+                    <div class="timeline-item">
+                        <span class="timeline-role">Tech Lead (former Principal Consultant)</span>
+                        <span class="timeline-date">SEP 2024 - Present</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-role">Lead Consultant</span>
+                        <span class="timeline-date">JAN 2022 - SEP 2024</span>
+                    </div>
+
+                    <div class="timeline-company">PRINCIPAL FINANCIAL GROUP:</div>
+                    <div class="timeline-item">
+                        <span class="timeline-role">Analyst</span>
+                        <span class="timeline-date">AUG 2020 - DEC 2021</span>
+                    </div>
+
+                    <div class="timeline-company">INFOSYS:</div>
+                    <div class="timeline-item">
+                        <span class="timeline-role">Technology Analyst</span>
+                        <span class="timeline-date">OCT 2019 - AUG 2020</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-role">Senior System Engineer</span>
+                        <span class="timeline-date">OCT 2018 - SEP 2019</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-role">System Engineer</span>
+                        <span class="timeline-date">MAR 2017 - OCT 2018</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-role">System Engineer Trainee</span>
+                        <span class="timeline-date">OCT 2016 - FEB 2017</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OTHER RESPONSIBILITIES AND EXPERIENCE -->
+        <section class="section">
+            <div class="section-title">Other Responsibilities and Experience</div>
+            <ul class="bullet-list">
+                <li><strong>Mainframe Automation:</strong> Working on writing automated scripts for RUMBA (including automated Package Creation for code migration to QA and Scripts capable of writing the data from online screens directly to desktop files-.csv/.txt).</li>
+                <li>Working in Developing and Maintaining modules as a MAINFRAME developer for leading US health care clients.</li>
+                <li>Developing Stored Procedure at the back end for the interactive front end applications, reports, JCL's and online modules (including PSAL's & CSAL's) which are called by other applications.</li>
+                <li>Development of CICS screens for Real Time Monitoring and displaying Data. Include writing drivers for the CICS screen from scratch.</li>
+                <li>Handling Production jobs and providing immediate support if any one of them fail.</li>
+                <li>Handling database-DB2 version 12. Updates and inserts for data sync up issues and other incidents.</li>
+                <li>Development of One-Shot Modules to update the Database instantly from the Excel files into MAINFRAME.</li>
+                <li>Debugging Batch modules and Stored Procedure using XPED.</li>
+                <li>Working in Development of Reports as a MAINFRAME developer.</li>
+                <li>Handling the Role of Configuration Manager apart from technical work. This includes verification of versions of all Codes/Services called and Documentation before production deployment.</li>
+                <li>Infosys Training Details include Generic training in Python OOPS and ORACLE Database.</li>
+                <li>Stream Training includes MAINFRAMES, DB2, JCL's and CICS.</li>
+                <li>TABLEAU software training.</li>
+            </ul>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section class="section">
+            <div class="section-title section-header-flex">
+                <span>Certifications</span>
+                <a href="certifications.html" class="view-certs-btn no-print">View Portfolio (PDFs)</a>
+            </div>
+            <ul class="bullet-list">
+                <li><strong>Amazon Web Services</strong> – Cloud Practitioner</li>
+                <li><strong>Certifications on Mainframe:</strong>
+                    <ul class="nested-list">
+                        <li>Introduction to z/OS commands and Panels on IBM Z</li>
+                        <li>Introduction to System Programming on IBM Z</li>
+                        <li>Introduction to IBM z/OS</li>
+                        <li>IBM MQ Developer Essentials</li>
+                        <li>Enterprise Design thinking Practitioner</li>
+                        <li>IBM z/OS mainframe Practitioner</li>
+                    </ul>
+                </li>
+                <li>Infosys Certified Mainframe Programmer</li>
+                <li>Business Communication Enablement Program</li>
+                <li>Foundation Course in Banking-I</li>
+            </ul>
+        </section>
+
+        <!-- INTEREST AREAS -->
+        <section class="section">
+            <div class="section-title">Interest Areas</div>
+            <div style="font-size: 13.5px; margin-bottom: 10px;">
+                <strong>Current IT interests:</strong>
+                <ul class="nested-list">
+                    <li>Mainframe Modernization and Development</li>
+                    <li>Cloud Infrastructure – GCP/AWS</li>
+                </ul>
+            </div>
+            <div style="font-size: 13.5px;">
+                <strong>Casual Interests:</strong>
+                <ul class="nested-list">
+                    <li>MATLAB</li>
+                    <li>ANALOG/POWER ELECTRONICS</li>
+                    <li>Communication Technologies</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS AND AWARDS -->
+        <section class="section">
+            <div class="section-title">Achievements and Awards</div>
+
+            <div class="awards-group">
+                <div class="awards-year-title">2025</div>
+                <ul class="awards-list">
+                    <li>Outstanding rating in the Year End Appraisal Cycle – High Value Resource.</li>
+                    <li>Appreciation on successfully converting legacy code migrated to Cloud infrastructure.</li>
+                </ul>
+            </div>
+
+            <div class="awards-group">
+                <div class="awards-year-title">2024</div>
+                <ul class="awards-list">
+                    <li>Outstanding rating in the Year End Appraisal Cycle-T20 (top performers).</li>
+                    <li>Team Player Award.</li>
+                    <li>Appreciation for driving new managed projects in Mainframe Modernizations and solutions.</li>
+                </ul>
+            </div>
+
+            <div class="awards-group">
+                <div class="awards-year-title">2023</div>
+                <ul class="awards-list">
+                    <li>Outstanding rating in the Year End Appraisal Cycle-T20 (top performers).</li>
+                    <li>Award for taking up the Intern Team and bringing them to pace on real Client projects by Training and Projects delivering revenue growth.</li>
+                </ul>
+            </div>
+
+            <div class="awards-group">
+                <div class="awards-year-title">2022</div>
+                <ul class="awards-list">
+                    <li>Outstanding rating in the Year End Appraisal Cycle-T20 (top performers).</li>
+                    <li>Quarterly awards for managing the teams efficiently.</li>
+                </ul>
+            </div>
+
+            <div class="awards-group">
+                <div class="awards-year-title">2021</div>
+                <ul class="awards-list">
+                    <li>SPOT AWARD (AUG 2021) – Category: Collaborator. For collaborating between different teams and deciding ownership of changed applications.</li>
+                    <li>QUARTERLY AWARD (JULY 2021) – Implementing New Functionality that reduced business process time for around 40-50 percent.</li>
+                    <li>SPOT AWARD (APR 2021) - Category: CONSIDER IT DONE. For actively providing new idea to enhance business experience on the CICS.</li>
+                </ul>
+            </div>
+
+            <div class="awards-group">
+                <div class="awards-year-title">2020</div>
+                <ul class="awards-list">
+                    <li>SPOT AWARD (OCT 2020) - Category: CONSIDER IT DONE. For completing the priority request for on-boarding Advisors for the Wells Fargo acquisition.</li>
+                </ul>
+            </div>
+
+            <div class="awards-group">
+                <div class="awards-year-title">2019</div>
+                <ul class="awards-list">
+                    <li>INFOSYS GLORY AWARD: for going “The Extra Mile”.</li>
+                    <li>Outstanding rating in the Year End Appraisal Cycle.</li>
+                    <li>Providing support in identifying the Scope for MIPS reduction. Delivered more than $10 Millions in MIPS for FY2020. This includes identifying the modules and tuning SQL Queries, rewriting codes efficiently, and suggesting Access Path Changes.</li>
+                </ul>
+            </div>
+
+            <div class="awards-group">
+                <div class="awards-year-title">2018</div>
+                <ul class="awards-list">
+                    <li>INFOSYS INSTA AWARD: For delivering complex compliance requests without any defects.</li>
+                    <li>Commendable rating in the Year End Appraisal Cycle.</li>
+                    <li>Infosys Internal Publication on: Performance Analysis of Batch Modules using STROBE.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section">
+            <div class="section-title">Education</div>
+
+            <div class="education-row">
+                <div class="education-left">
+                    <strong>GRADUATION: BACHELOR OF TECHNOLOGY</strong><br>
+                    JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY, NOIDA | DEEMED UNIVERSITY<br>
+                    <span style="font-size: 12.5px; color: var(--text-light);">STREAM: ELECTRONICS AND COMMUNICATION</span>
+                </div>
+                <div class="education-right">
+                    2012-2016<br>
+                    Score: 86%
+                </div>
+            </div>
+
+            <div class="education-row">
+                <div class="education-left">
+                    <strong>HIGHER SECONDARY CERTIFICATE</strong><br>
+                    KENDRIYA VIDYALAYA BIKANER (RAJASTHAN)
+                </div>
+                <div class="education-right">
+                    2010-2011<br>
+                    Score: 82%
+                </div>
+            </div>
+
+            <div class="education-row">
+                <div class="education-left">
+                    <strong>SECONDARY CERTIFICATE</strong><br>
+                    KENDRIYA VIDYALAYA CHANDIGARH
+                </div>
+                <div class="education-right">
+                    2008-2009<br>
+                    Score: 92%
+                </div>
+            </div>
+        </section>
+
+        <footer style="margin-top: 30px; font-size: 11px; color: var(--text-light); text-align: center;">
+            I hereby declare that the above-mentioned particulars are true to the best of my knowledge and belief.
+        </footer>
+    </div>
+
+</body>
+</html>
