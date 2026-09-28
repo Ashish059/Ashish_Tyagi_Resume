@@ -102,6 +102,10 @@
             color: var(--primary-color);
         }
 
+        .section {
+            margin-bottom: 25px;
+        }
+
         .section-title {
             color: var(--primary-color);
             font-size: 16px;
@@ -109,33 +113,11 @@
             text-transform: uppercase;
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 3px;
-            margin-top: 22px;
             margin-bottom: 12px;
             letter-spacing: 0.5px;
-        }
-
-        .section-header-flex {
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-
-        .view-certs-btn {
-            font-size: 11px;
-            padding: 3px 10px;
-            border: 1px solid var(--secondary-color);
-            color: var(--secondary-color);
-            text-decoration: none;
-            border-radius: 4px;
-            transition: all 0.3s;
-            font-weight: 600;
-            text-transform: none;
-            letter-spacing: 0;
-        }
-
-        .view-certs-btn:hover {
-            background-color: var(--secondary-color);
-            color: white;
         }
 
         .profile-summary ul {
@@ -331,6 +313,24 @@
             font-weight: 600;
         }
 
+        .cert-btn {
+            font-size: 11px;
+            padding: 4px 10px;
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        .cert-btn:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
         @media print {
             body { background-color: #fff; font-size: 12px; }
             .container { margin: 0; padding: 0; box-shadow: none; max-width: 100%; border-top: none; }
@@ -383,7 +383,7 @@
             🎯 <strong>Role Preferences:</strong> Digital Architect | Solution Architect | Technical Architect
         </div>
 
-        <!-- CORE COMPETENCIES & TECHNICAL SKILLS (TILE LAYOUT) -->
+        <!-- CORE COMPETENCIES & TECHNICAL SKILLS -->
         <section class="section">
             <div class="section-title">Core Competencies & Technical Skills</div>
             <div class="skills-grid">
@@ -412,7 +412,6 @@
                     <span class="tag">Agentic AI <span class="prof">[Intermediate]</span></span>
                     <span class="tag">Core Java <span class="prof">[Beginner]</span></span>
                     <span class="tag">Spring Boot <span class="prof">[Intermediate]</span></span>
-                    <span class="tag">Spring MVC & Hibernate</span>
                     <span class="tag">RESTful APIs</span>
                     <span class="tag">JavaScript / React JS</span>
                     <span class="tag">Oracle Database</span>
@@ -519,11 +518,7 @@
                 <li>Working in Developing and Maintaining modules as a MAINFRAME developer for leading US health care clients.</li>
                 <li>Developing Stored Procedure at the back end for the interactive front end applications, reports, JCL's and online modules (including PSAL's & CSAL's) which are called by other applications.</li>
                 <li>Development of CICS screens for Real Time Monitoring and displaying Data. Include writing drivers for the CICS screen from scratch.</li>
-                <li>Handling Production jobs and providing immediate support if any one of them fail.</li>
                 <li>Handling database-DB2 version 12. Updates and inserts for data sync up issues and other incidents.</li>
-                <li>Development of One-Shot Modules to update the Database instantly from the Excel files into MAINFRAME.</li>
-                <li>Debugging Batch modules and Stored Procedure using XPED.</li>
-                <li>Working in Development of Reports as a MAINFRAME developer.</li>
                 <li>Handling the Role of Configuration Manager apart from technical work. This includes verification of versions of all Codes/Services called and Documentation before production deployment.</li>
                 <li>Infosys Training Details include Generic training in Python OOPS and ORACLE Database.</li>
                 <li>Stream Training includes MAINFRAMES, DB2, JCL's and CICS.</li>
@@ -533,9 +528,9 @@
 
         <!-- CERTIFICATIONS -->
         <section class="section">
-            <div class="section-title section-header-flex">
+            <div class="section-title">
                 <span>Certifications</span>
-                <a href="certifications.html" class="view-certs-btn no-print">View Portfolio (PDFs)</a>
+                <a href="certifications.html" class="cert-btn no-print">📋 View Certificates (PDF)</a>
             </div>
             <ul class="bullet-list">
                 <li><strong>Amazon Web Services</strong> – Cloud Practitioner</li>
@@ -553,26 +548,6 @@
                 <li>Business Communication Enablement Program</li>
                 <li>Foundation Course in Banking-I</li>
             </ul>
-        </section>
-
-        <!-- INTEREST AREAS -->
-        <section class="section">
-            <div class="section-title">Interest Areas</div>
-            <div style="font-size: 13.5px; margin-bottom: 10px;">
-                <strong>Current IT interests:</strong>
-                <ul class="nested-list">
-                    <li>Mainframe Modernization and Development</li>
-                    <li>Cloud Infrastructure – GCP/AWS</li>
-                </ul>
-            </div>
-            <div style="font-size: 13.5px;">
-                <strong>Casual Interests:</strong>
-                <ul class="nested-list">
-                    <li>MATLAB</li>
-                    <li>ANALOG/POWER ELECTRONICS</li>
-                    <li>Communication Technologies</li>
-                </ul>
-            </div>
         </section>
 
         <!-- ACHIEVEMENTS AND AWARDS -->
@@ -622,13 +597,6 @@
             </div>
 
             <div class="awards-group">
-                <div class="awards-year-title">2020</div>
-                <ul class="awards-list">
-                    <li>SPOT AWARD (OCT 2020) - Category: CONSIDER IT DONE. For completing the priority request for on-boarding Advisors for the Wells Fargo acquisition.</li>
-                </ul>
-            </div>
-
-            <div class="awards-group">
                 <div class="awards-year-title">2019</div>
                 <ul class="awards-list">
                     <li>INFOSYS GLORY AWARD: for going “The Extra Mile”.</li>
@@ -660,28 +628,6 @@
                 <div class="education-right">
                     2012-2016<br>
                     Score: 86%
-                </div>
-            </div>
-
-            <div class="education-row">
-                <div class="education-left">
-                    <strong>HIGHER SECONDARY CERTIFICATE</strong><br>
-                    KENDRIYA VIDYALAYA BIKANER (RAJASTHAN)
-                </div>
-                <div class="education-right">
-                    2010-2011<br>
-                    Score: 82%
-                </div>
-            </div>
-
-            <div class="education-row">
-                <div class="education-left">
-                    <strong>SECONDARY CERTIFICATE</strong><br>
-                    KENDRIYA VIDYALAYA CHANDIGARH
-                </div>
-                <div class="education-right">
-                    2008-2009<br>
-                    Score: 92%
                 </div>
             </div>
         </section>

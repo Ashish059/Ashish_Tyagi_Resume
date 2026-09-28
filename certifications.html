@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashish Tyagi - Portfolio Certificates</title>
+    <title>Ashish Tyagi - Certifications Portfolio</title>
     <style>
         :root {
             --primary-color: #1e3a8a;
             --secondary-color: #2563eb;
-            --text-dark: #1f2937;
             --bg-light: #f3f4f6;
+            --error-bg: #fee2e2;
+            --error-text: #991b1b;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--text-dark);
             margin: 0;
             padding: 20px;
             background-color: var(--bg-light);
@@ -28,126 +28,142 @@
             align-items: center;
         }
 
-        .back-btn {
-            background-color: var(--primary-color);
-            color: white;
+        .back-link {
             text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-size: 14px;
+            color: var(--secondary-color);
             font-weight: 600;
-        }
-
-        .back-btn:hover {
-            background-color: var(--secondary-color);
-        }
-
-        h1 {
-            color: var(--primary-color);
-            margin: 0;
-            font-size: 24px;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .grid-container {
-            max-width: 1200px;
-            margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         .tile {
             background: white;
             border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
             display: flex;
             flex-direction: column;
-            height: 650px;
+            height: 800px;
         }
 
-        .tile h3 {
-            margin: 0 0 10px 0;
+        .tile-header {
+            padding: 15px;
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
             font-size: 16px;
-            color: var(--primary-color);
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 5px;
         }
 
-        .pdf-viewer {
-            width: 100%;
+        .content-area {
             flex-grow: 1;
-            border: 1px solid #d1d5db;
-            border-radius: 4px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9fafb;
         }
 
-        @media (max-width: 600px) {
-            .grid-container {
-                grid-template-columns: 1fr;
-            }
-            .tile {
-                height: 450px;
-            }
+        .pdf-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .failed-tile {
+            background-color: var(--error-bg);
+            border: 2px dashed #ef4444;
+        }
+
+        .error-message {
+            text-align: center;
+            color: var(--error-text);
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .grid-container { grid-template-columns: 1fr; }
+            .tile { height: 500px; }
         }
     </style>
 </head>
 <body>
 
     <div class="header-nav">
-        <h1>📜 Professional Certifications & Portfolios</h1>
-        <a href="index.html" class="back-btn">⬅️ Back to Resume</a>
+        <h1 style="color: var(--primary-color); margin: 0;">📜 Professional Certifications Portfolio</h1>
+        <a href="index.html" class="back-link">⬅ Back to Resume</a>
     </div>
 
     <div class="grid-container">
-
-        <!-- AWS Cloud Practitioner -->
+        <!-- 1. Enterprise Design Thinking -->
         <div class="tile">
-            <h3>Amazon Web Services – Cloud Practitioner</h3>
-            <iframe class="pdf-viewer" src="aws_cloud_practitioner.pdf#toolbar=0" title="AWS Certificate"></iframe>
+            <div class="tile-header">Enterprise Design Thinking Practitioner</div>
+            <iframe class="pdf-frame" src="Enterprise%20Design%20Thinking%20Practitioner.pdf"></iframe>
         </div>
 
-        <!-- IBM Z commands and Panels -->
+        <!-- 2. IBM zOS Mainframe Practitioner -->
         <div class="tile">
-            <h3>Introduction to z/OS commands and Panels on IBM Z</h3>
-            <iframe class="pdf-viewer" src="ibm_zos_panels.pdf#toolbar=0" title="IBM Panels Certificate"></iframe>
+            <div class="tile-header">IBM zOS Mainframe Practitioner</div>
+            <iframe class="pdf-frame" src="IBM%20zOS%20Mainframe%20Practitioner.pdf"></iframe>
         </div>
 
-        <!-- IBM Z System Programming -->
+        <!-- 3. zOS Commands and Panels -->
         <div class="tile">
-            <h3>Introduction to System Programming on IBM Z</h3>
-            <iframe class="pdf-viewer" src="ibm_system_programming.pdf#toolbar=0" title="IBM System Programming Certificate"></iframe>
+            <div class="tile-header">Introduction to zOS Commands and Panels on IBM Z</div>
+            <iframe class="pdf-frame" src="Introduction%20to%20zOS%20Commands%20and%20Panels%20on%20IBM%20Z.pdf"></iframe>
         </div>
 
-        <!-- IBM z/OS -->
+        <!-- 4. System Programming -->
         <div class="tile">
-            <h3>Introduction to IBM z/OS</h3>
-            <iframe class="pdf-viewer" src="ibm_intro_zos.pdf#toolbar=0" title="IBM Intro zOS Certificate"></iframe>
+            <div class="tile-header">Introduction to System Programming on IBM Z</div>
+            <iframe class="pdf-frame" src="Introduction%20to%20System%20Programming%20on%20IBM%20Z.pdf"></iframe>
         </div>
 
-        <!-- IBM MQ Developer Essentials -->
+        <!-- 5. Introduction to IBM zOS -->
         <div class="tile">
-            <h3>IBM MQ Developer Essentials</h3>
-            <iframe class="pdf-viewer" src="ibm_mq_developer.pdf#toolbar=0" title="IBM MQ Certificate"></iframe>
+            <div class="tile-header">Introduction to IBM zOS</div>
+            <iframe class="pdf-frame" src="Introduction%20to%20IBM%20zOS.pdf"></iframe>
         </div>
 
-        <!-- Enterprise Design thinking Practitioner -->
+        <!-- 6. IBM MQ Developer Essentials -->
         <div class="tile">
-            <h3>Enterprise Design Thinking Practitioner</h3>
-            <iframe class="pdf-viewer" src="ibm_design_thinking.pdf#toolbar=0" title="Design Thinking Certificate"></iframe>
+            <div class="tile-header">IBM MQ Developer Essentials</div>
+            <iframe class="pdf-frame" src="IBM%20MQ%20Developer%20Essentials.pdf"></iframe>
         </div>
 
-        <!-- IBM z/OS mainframe Practitioner -->
-        <div class="tile">
-            <h3>IBM z/OS Mainframe Practitioner</h3>
-            <iframe class="pdf-viewer" src="ibm_mainframe_practitioner.pdf#toolbar=0" title="Mainframe Practitioner Certificate"></iframe>
+        <!-- 7. AWS - FAILED -->
+        <div class="tile failed-tile">
+            <div class="tile-header" style="background: #991b1b;">Amazon Web Services – Cloud Practitioner</div>
+            <div class="content-area">
+                <div class="error-message">
+                    <div style="font-size: 50px;">❌</div>
+                    <h2>Certificate Upload Failed</h2>
+                    <p>The file 'aws_cloud_practitioner.pdf' was not found.</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Infosys Certified Mainframe Programmer -->
-        <div class="tile">
-            <h3>Infosys Certified Mainframe Programmer</h3>
-            <iframe class="pdf-viewer" src="infosys_mainframe_programmer.pdf#toolbar=0" title="Infosys Mainframe Certificate"></iframe>
+        <!-- 8. Infosys - FAILED -->
+        <div class="tile failed-tile">
+            <div class="tile-header" style="background: #991b1b;">Infosys Certified Mainframe Programmer</div>
+            <div class="content-area">
+                <div class="error-message">
+                    <div style="font-size: 50px;">❌</div>
+                    <h2>Certificate Upload Failed</h2>
+                    <p>The file 'infosys_certified.pdf' was not found.</p>
+                </div>
+            </div>
         </div>
-
     </div>
 
 </body>
